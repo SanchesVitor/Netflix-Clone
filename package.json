@@ -1,0 +1,23 @@
+{
+  "name": "netflix-clone",
+  "version": "1.0.0",
+  "description": "Neste Projeto procurei fazer um clone do Netlfix, práticando bem HTML e CSS, voltado para responsividade e position.Praticando também em JavaScript, consumir uma API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanchesVitor/Netflix-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanchesVitor/Netflix-Clone/issues"
+  },
+  "homepage": "https://github.com/SanchesVitor/Netflix-Clone#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
