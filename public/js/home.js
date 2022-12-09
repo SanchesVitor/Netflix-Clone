@@ -45,3 +45,29 @@ const makeCategoryElement = (category, data)=>{
   `
   makeCards(category, data)
 }
+
+const makeCards = (id, data)=>{
+  const movieContainer = document.getElementById(id)
+
+  data.forEach((item, i)=>{
+    if(item.backdrop_path == null){
+      item.backdrop_path = item.poster_path;
+      if(item.backdrop_path == null){
+        return
+      }
+    }
+
+    movieContainer.innerHTML += `
+    <div class="movie">
+      <img src="${img_url}${item.backdrop_path}" alt="Poster">
+      <p class="movie-title">${item.title}</p>
+    </div>
+    `
+
+    if(i == data.length -1){
+      setTimeout(()=>{
+        setupScrooling()
+      }, 100)
+    }
+  })
+}
